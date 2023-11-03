@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [Header("Скорость пули")]
     public float bullet_speed =1000;
     public float damage = 10;
-    public int rot;
-    // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject,3);
+        Destroy(gameObject,3);//удаляем пулю через время
     }
 
-    // Update is called once per frame
     void Update()
     {
+        #region перемещение
         Vector3 pos = new Vector3(bullet_speed* Time.deltaTime, 0, 0);
         transform.localPosition = transform.localPosition + pos;
+        #endregion
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponent<EnemySystem>().hp -= damage;
-        Destroy(gameObject);
+        Destroy(gameObject,0.1f);//удаляем пулю через время
+        if(collision.tag == "Mob")//если это враг
+            collision.GetComponent<EnemySystem>().hp -= damage;//наносим урон
     }
 }

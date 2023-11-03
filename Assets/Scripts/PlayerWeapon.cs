@@ -5,19 +5,28 @@ using UnityEngine;
 public class PlayerWeapon : MonoBehaviour
 {
     int ammo;
+    [Header("Количество пуль в магазине")]
     public int ammo_def = 30;
+    [Header("Скорострельность")]
     public float time_attack=0.2f;
-    public bool reload;
+    bool reload;
+    [Header("Время перезарядки")]
     public float time_reload = 1;
 
+    [Header("Обьект пули")]
     public Transform bullet;
+    [Header("Урон пули")]
+    public float bullet_damage=10;
+    [Header("Точка выстрела")]
     public Transform point_gun;
-    public Animator weapon_animator;
-    // Start is called before the first frame update
-    void Start()
+
+    Animator weapon_animator;
+    void OnEnable()
     {
-        ammo = ammo_def;
-        StartCoroutine("Attack");
+        weapon_animator = gameObject.GetComponent<Animator>();
+        ammo = ammo_def;//заполняем магазин
+        reload = false;
+        StartCoroutine("Attack");//Автострельба
     }
 
     IEnumerator Attack()
@@ -25,15 +34,18 @@ public class PlayerWeapon : MonoBehaviour
         while (true)
         {
             if (reload)
-                yield return new WaitForSeconds(1);
-            ammo--;
+                yield return new WaitForSeconds(1);//ждём
+            ammo--;//отнимаем пули
             Transform bullet_inst =  Instantiate(bullet, point_gun.position, point_gun.rotation);
             bullet_inst.SetParent(point_gun);
+            bullet_inst.SetParent(transform.parent);
+            bullet_inst.gameObject.GetComponent<Bullet>().damage = bullet_damage;//применяем пуле урон
+            
             if (ammo ==0)
             {
-                StartCoroutine("Reload");
+                StartCoroutine("Reload");//запускаем перезарядку если нет пуль
             }
-            yield return new WaitForSeconds(time_attack);
+            yield return new WaitForSeconds(time_attack);//ждём
         }
         
     }
@@ -41,9 +53,9 @@ public class PlayerWeapon : MonoBehaviour
     {
         reload = true;
         weapon_animator.SetBool("reload",true);
-        yield return new WaitForSeconds(time_reload);
+        yield return new WaitForSeconds(time_reload);//ждём
         weapon_animator.SetBool("reload", false);
-        ammo = ammo_def;
+        ammo = ammo_def;//заполняем магазин
         reload = false;
     }
 

@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemySystem : MonoBehaviour
 {
+    public GameSystem GS;
+    public GameObject player;
+
     public float move;
     public float move_speed;
     public Animator mob_animator;
@@ -12,15 +16,21 @@ public class EnemySystem : MonoBehaviour
     public bool dead;
     public float hp = 100;
 
-    // Start is called before the first frame update
+    public Slider hp_hud;
+
+    public float distance_attack = 10;
+    public float damage = 20;
     void Start()
     {
-        
+        hp_hud.maxValue = hp;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (dead)
+            return;
+
+        hp_hud.value = hp;
         if (hp <= 0)
             dead = true;
 
@@ -42,8 +52,21 @@ public class EnemySystem : MonoBehaviour
             mob_animator.SetBool("walk", false);
             mob_animator.SetBool("dead", true);
             Destroy(gameObject,3);
+            GS.dead_mob();
         }
 
-
+        float distance_to_player = Vector3.Distance(transform.position,player.transform.position);
+        if (distance_to_player<=distance_attack)
+        {
+            attack = true;
+        }
+        else
+        {
+            attack = false;
+        }
+    }
+    public void Attack()
+    {
+        player.GetComponent<PlayerController>().hp -=damage;
     }
 }

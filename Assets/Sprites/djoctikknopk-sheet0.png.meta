@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 546a02259de092c4b9894bdf8ef0c520
+guid: a79680040362e514b9be6b0557e11d66
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,307 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hand-sheet0_1
+      name: djoctikknopk-sheet0_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 89
-        width: 40
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27902aba40188ff41af95aaa65753568
-      internalID: -1750778307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_2
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 92
-        width: 34
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd817e648b90e7c4d8720e87cb8a16aa
-      internalID: -1668081732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_3
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 51
-        width: 39
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8d5758b6f40cfa4fb5b488f63a5bfb7
-      internalID: 1854121674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_4
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 13
-        width: 34
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d9f40b267d415b4c89a44fe5d95efcd
-      internalID: -251884578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_5
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 13
-        width: 34
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b04f1963753b8948bcc5f3957b98198
-      internalID: -1791218978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_0
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 61
-        width: 3
-        height: 1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cefd7aa8f7fc2a344b3b083c5e3926eb
-      internalID: -40248678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_6
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 111
-        width: 49
-        height: 16
-      alignment: 9
-      pivot: {x: 0.08319263, y: 0.4187703}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 625acae58c267704ba39fb1eba4f1d40
-      internalID: 1937159082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_7
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 111
-        width: 45
-        height: 16
-      alignment: 9
-      pivot: {x: 0.06677314, y: 0.4187703}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b07996cef77cdcf4cbf96821123cdf56
-      internalID: 765110973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_8
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 4
-        width: 42
-        height: 9
-      alignment: 9
-      pivot: {x: 0.071193874, y: 0.6031497}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbeafb736e947ad419116cfb08b2321a
-      internalID: 794955972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_9
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 71
-        width: 33
-        height: 18
-      alignment: 9
-      pivot: {x: 0.083652176, y: 0.73724365}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87f55fddcddc2b341b173e5afc0d8f71
-      internalID: -1318346290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_10
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 70
-        width: 33
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 782977c5c68172648bc39f94ced27b75
-      internalID: -137054917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_11
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 70
-        width: 33
-        height: 18
-      alignment: 9
-      pivot: {x: 0.08927825, y: 0.7888188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50fd0f3b5f3c91a478533b94b913c558
-      internalID: -2122717220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_12
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 50
-        width: 33
-        height: 18
-      alignment: 9
-      pivot: {x: 0.09490481, y: 0.22149764}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a05fca11f046ec448b5f9ffce0e5101
-      internalID: -1772573881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_13
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 33
-        width: 33
-        height: 18
-      alignment: 9
-      pivot: {x: 0.08927859, y: 0.83007854}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9826a72f9440fce4da7797a977294291
-      internalID: -559197222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hand-sheet0_14
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 75
-        width: 20
-        height: 13
+        y: 45
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bf4cca79d47ddf4c88b020082d6f305
-      internalID: -1259890980
+      spriteID: 7880fd4463a4ccf4eaff70d77592f518
+      internalID: -1324655444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hand-sheet0_15
+      name: djoctikknopk-sheet0_1
       rect:
         serializedVersion: 2
-        x: 107
-        y: 32
-        width: 20
-        height: 15
+        x: 23
+        y: 45
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,8 +164,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a1b4bef63c480549b6e1eeefba9343d
-      internalID: 849551276
+      spriteID: b2e3076d56fdd8c40abc8631e4eb87e5
+      internalID: -665788620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: djoctikknopk-sheet0_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 45
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc0ab3aa8be4694e8e8a1fb8231572c
+      internalID: 1552968917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: djoctikknopk-sheet0_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9651e061d0cfe34a882bab689ae5458
+      internalID: 1156007761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: djoctikknopk-sheet0_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2405be5c5fc42543adc959ff69c0b82
+      internalID: -1983524798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: djoctikknopk-sheet0_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5231b75d5f57f0446b810ecb6f320b4f
+      internalID: 1887998076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: djoctikknopk-sheet0_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d904c58000934e45b1dc552bb346097
+      internalID: -1021103718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: djoctikknopk-sheet0_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cdc3f613a96f147b1eadeb7ede178f
+      internalID: 2095149976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: djoctikknopk-sheet0_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 3
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7d7de151c89ad4680b138eef7a9ab7
+      internalID: -262790043
       vertices: []
       indices: 
       edges: []
@@ -475,22 +328,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hand-sheet0_4: -251884578
-      hand-sheet0_13: -559197222
-      hand-sheet0_6: 1937159082
-      hand-sheet0_7: 765110973
-      hand-sheet0_14: -1259890980
-      hand-sheet0_3: 1854121674
-      hand-sheet0_8: 794955972
-      hand-sheet0_10: -137054917
-      hand-sheet0_11: -2122717220
-      hand-sheet0_5: -1791218978
-      hand-sheet0_0: -40248678
-      hand-sheet0_15: 849551276
-      hand-sheet0_12: -1772573881
-      hand-sheet0_1: -1750778307
-      hand-sheet0_2: -1668081732
-      hand-sheet0_9: -1318346290
+      djoctikknopk-sheet0_8: -262790043
+      djoctikknopk-sheet0_3: 1156007761
+      djoctikknopk-sheet0_4: -1983524798
+      djoctikknopk-sheet0_2: 1552968917
+      djoctikknopk-sheet0_5: 1887998076
+      djoctikknopk-sheet0_7: 2095149976
+      djoctikknopk-sheet0_1: -665788620
+      djoctikknopk-sheet0_0: -1324655444
+      djoctikknopk-sheet0_6: -1021103718
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
