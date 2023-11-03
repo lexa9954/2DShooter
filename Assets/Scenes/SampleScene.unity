@@ -230,8 +230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   mobs: []
-  dead_window: {fileID: 0}
-  win_window: {fileID: 0}
+  dead_window: {fileID: 488677077}
+  win_window: {fileID: 995749244}
 --- !u!4 &40576376
 Transform:
   m_ObjectHideFlags: 0
@@ -877,7 +877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &488677078
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2434,7 +2434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &995749245
 RectTransform:
   m_ObjectHideFlags: 0
