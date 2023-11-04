@@ -2522,7 +2522,7 @@ MonoBehaviour:
   time_attack: 0.5
   time_reload: 1
   bullet: {fileID: 790442238482452685, guid: 196d585aa90492c40a8f14f77c3f4eef, type: 3}
-  bullet_damage: 25
+  bullet_damage: 40
   bullet_speed: 0
   point_gun: {fileID: 583400269}
 --- !u!114 &791694304
