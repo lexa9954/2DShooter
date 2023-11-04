@@ -8,13 +8,14 @@ public class GameSystem : MonoBehaviour
     public PlayerController player; 
     public EnemySystem[] mobs;
 
+    public GameObject start_window;//окно начала игры
     public GameObject dead_window;//окно поражения
     public GameObject win_window;//окно победы
 
     bool win;
     private void Start()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 0;
         player = FindObjectOfType<PlayerController>();
         mobs = FindObjectsOfType<EnemySystem>();
 
@@ -47,6 +48,7 @@ public class GameSystem : MonoBehaviour
             else
             {
                 win = false;
+                return;
             }
         }
         //по результатам проверки сверху обьявляем победу если все убиты
@@ -60,5 +62,10 @@ public class GameSystem : MonoBehaviour
     public void Restart_level()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void StartGame()
+    {
+        Time.timeScale = 1;
+        start_window.SetActive(false);
     }
 }

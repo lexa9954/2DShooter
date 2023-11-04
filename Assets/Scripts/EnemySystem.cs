@@ -82,6 +82,7 @@ public class EnemySystem : MonoBehaviour
 
     IEnumerator Dead()
     {
+        this.GetComponent<BoxCollider2D>().enabled = false;
         yield return new WaitForSeconds(3);
         //удаляем обьект врага и вызываем метод смерти в GameSystem
         gameObject.SetActive(false);
