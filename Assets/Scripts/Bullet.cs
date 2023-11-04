@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [Header("Скорость пули")]
     public float bullet_speed =1000;
     public float damage = 10;
     void Start()

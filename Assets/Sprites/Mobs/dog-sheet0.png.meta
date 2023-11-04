@@ -321,12 +321,12 @@ TextureImporter:
       name: dog-sheet0_9
       rect:
         serializedVersion: 2
-        x: 81
-        y: 31
+        x: 39
+        y: 28
         width: 37
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49611622, y: 0.0773753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

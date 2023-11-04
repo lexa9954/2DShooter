@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameSystem : MonoBehaviour
 {
-    public PlayerController player;
+    public PlayerController player; 
     public EnemySystem[] mobs;
 
-    public GameObject dead_window;
-    public GameObject win_window;
+    public GameObject dead_window;//окно поражени€
+    public GameObject win_window;//окно победы
 
     bool win;
     private void Start()
@@ -18,6 +18,7 @@ public class GameSystem : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         mobs = FindObjectsOfType<EnemySystem>();
 
+        //закидываем всех врагов на карте в наш массив дл€ вычислени€ победы
         foreach (EnemySystem mob in mobs)
         {
             mob.GS = this;
@@ -26,18 +27,20 @@ public class GameSystem : MonoBehaviour
 
     private void Update()
     {
+        //провер€ем на смерть игрока
         if (player.hp<=0)
         {
             dead_window.SetActive(true);
             Time.timeScale = 0;
         }
     }
+    //вызываетс€ из скрипта EnemySystem
     public void dead_mob()
     {
+        //после каждого убитого врага провер€ем всех мобов на смерть
         for (int i=0;i<mobs.Length;i++)
         {
-            Debug.Log(mobs[i]);
-            if (!mobs[i])
+            if (mobs[i].dead)
             {
                 win = true;
             }
@@ -46,14 +49,16 @@ public class GameSystem : MonoBehaviour
                 win = false;
             }
         }
+        //по результатам проверки сверху обь€вл€ем победу если все убиты
         if (!win)
             return;
+        //отображаем окно с выигрышем
         win_window.SetActive(true);
+        //—тавим игру на паузу
         Time.timeScale = 0;
     }
     public void Restart_level()
     {
-        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
