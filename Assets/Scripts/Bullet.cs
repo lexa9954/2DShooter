@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float bullet_speed =1000;
     public float damage = 10;
+    //я внес изменения
     void Start()
     {
         Destroy(gameObject,3);//удаляем пулю через время
